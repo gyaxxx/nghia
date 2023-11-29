@@ -30,11 +30,8 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTrangChu));
 			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+			this.btnCloseForm = new System.Windows.Forms.PictureBox();
 			this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.loadContent = new System.Windows.Forms.Panel();
 			this.picUTCLogo = new System.Windows.Forms.PictureBox();
 			this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
 			this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
@@ -42,19 +39,23 @@
 			this.btnQuanLiHoaDon = new Guna.UI2.WinForms.Guna2Button();
 			this.btnQuanLiSV = new Guna.UI2.WinForms.Guna2Button();
 			this.btnQanLiPhong = new Guna.UI2.WinForms.Guna2Button();
-			this.btnCloseForm = new System.Windows.Forms.PictureBox();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.loadContent = new System.Windows.Forms.Panel();
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.label2 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.label5 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.guna2Panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.btnCloseForm)).BeginInit();
 			this.guna2GradientPanel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picUTCLogo)).BeginInit();
 			this.panel1.SuspendLayout();
 			this.loadContent.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.picUTCLogo)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.btnCloseForm)).BeginInit();
 			this.panel4.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.tableLayoutPanel1.SuspendLayout();
@@ -70,6 +71,17 @@
 			this.guna2Panel1.Name = "guna2Panel1";
 			this.guna2Panel1.Size = new System.Drawing.Size(1200, 31);
 			this.guna2Panel1.TabIndex = 10;
+			// 
+			// btnCloseForm
+			// 
+			this.btnCloseForm.Image = global::BTL_QuanLiKTX.Properties.Resources.close;
+			this.btnCloseForm.Location = new System.Drawing.Point(1172, 2);
+			this.btnCloseForm.Margin = new System.Windows.Forms.Padding(2);
+			this.btnCloseForm.Name = "btnCloseForm";
+			this.btnCloseForm.Size = new System.Drawing.Size(26, 26);
+			this.btnCloseForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.btnCloseForm.TabIndex = 10;
+			this.btnCloseForm.TabStop = false;
 			// 
 			// guna2GradientPanel1
 			// 
@@ -90,50 +102,6 @@
 			this.guna2GradientPanel1.Name = "guna2GradientPanel1";
 			this.guna2GradientPanel1.Size = new System.Drawing.Size(234, 619);
 			this.guna2GradientPanel1.TabIndex = 11;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.BackColor = System.Drawing.Color.DarkSlateBlue;
-			this.label3.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.label3.Location = new System.Drawing.Point(63, 363);
-			this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(0, 20);
-			this.label3.TabIndex = 2;
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(404, 17);
-			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(153, 26);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "DASHBOARD";
-			// 
-			// panel1
-			// 
-			this.panel1.BackColor = System.Drawing.Color.PapayaWhip;
-			this.panel1.Controls.Add(this.label1);
-			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel1.Location = new System.Drawing.Point(234, 31);
-			this.panel1.Margin = new System.Windows.Forms.Padding(2);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(966, 52);
-			this.panel1.TabIndex = 12;
-			// 
-			// loadContent
-			// 
-			this.loadContent.Controls.Add(this.tableLayoutPanel1);
-			this.loadContent.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.loadContent.Location = new System.Drawing.Point(234, 83);
-			this.loadContent.Margin = new System.Windows.Forms.Padding(2);
-			this.loadContent.Name = "loadContent";
-			this.loadContent.Size = new System.Drawing.Size(966, 567);
-			this.loadContent.TabIndex = 13;
 			// 
 			// picUTCLogo
 			// 
@@ -275,16 +243,49 @@
 			this.btnQanLiPhong.Text = "Phòng";
 			this.btnQanLiPhong.TextOffset = new System.Drawing.Point(5, 0);
 			// 
-			// btnCloseForm
+			// label3
 			// 
-			this.btnCloseForm.Image = global::BTL_QuanLiKTX.Properties.Resources.close;
-			this.btnCloseForm.Location = new System.Drawing.Point(1172, 2);
-			this.btnCloseForm.Margin = new System.Windows.Forms.Padding(2);
-			this.btnCloseForm.Name = "btnCloseForm";
-			this.btnCloseForm.Size = new System.Drawing.Size(26, 26);
-			this.btnCloseForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.btnCloseForm.TabIndex = 10;
-			this.btnCloseForm.TabStop = false;
+			this.label3.AutoSize = true;
+			this.label3.BackColor = System.Drawing.Color.DarkSlateBlue;
+			this.label3.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.label3.Location = new System.Drawing.Point(63, 363);
+			this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(0, 20);
+			this.label3.TabIndex = 2;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(404, 17);
+			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(153, 26);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "DASHBOARD";
+			// 
+			// panel1
+			// 
+			this.panel1.BackColor = System.Drawing.Color.PapayaWhip;
+			this.panel1.Controls.Add(this.label1);
+			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel1.Location = new System.Drawing.Point(234, 31);
+			this.panel1.Margin = new System.Windows.Forms.Padding(2);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(966, 52);
+			this.panel1.TabIndex = 12;
+			// 
+			// loadContent
+			// 
+			this.loadContent.Controls.Add(this.tableLayoutPanel1);
+			this.loadContent.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.loadContent.Location = new System.Drawing.Point(234, 83);
+			this.loadContent.Margin = new System.Windows.Forms.Padding(2);
+			this.loadContent.Name = "loadContent";
+			this.loadContent.Size = new System.Drawing.Size(966, 567);
+			this.loadContent.TabIndex = 13;
 			// 
 			// guna2Panel2
 			// 
@@ -320,6 +321,7 @@
 			// panel3
 			// 
 			this.panel3.BackColor = System.Drawing.Color.SteelBlue;
+			this.panel3.Controls.Add(this.label4);
 			this.panel3.Controls.Add(this.label5);
 			this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel3.Location = new System.Drawing.Point(2, 2);
@@ -340,6 +342,15 @@
 			this.label5.Size = new System.Drawing.Size(75, 26);
 			this.label5.TabIndex = 0;
 			this.label5.Text = "Phòng";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(374, 208);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(35, 13);
+			this.label4.TabIndex = 1;
+			this.label4.Text = "label4";
 			// 
 			// tableLayoutPanel1
 			// 
@@ -374,13 +385,13 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FormTrangChu";
 			this.guna2Panel1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.btnCloseForm)).EndInit();
 			this.guna2GradientPanel1.ResumeLayout(false);
 			this.guna2GradientPanel1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picUTCLogo)).EndInit();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.loadContent.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.picUTCLogo)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.btnCloseForm)).EndInit();
 			this.panel4.ResumeLayout(false);
 			this.panel4.PerformLayout();
 			this.panel3.ResumeLayout(false);
@@ -408,6 +419,7 @@
 		private System.Windows.Forms.Panel loadContent;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 		private System.Windows.Forms.Panel panel3;
+		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Panel panel4;
 		private System.Windows.Forms.Label label2;

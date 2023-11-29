@@ -17,7 +17,7 @@ namespace BTL_QuanLiKTX
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormQLHoaDon());
+            Application.Run(new FormNhapTienThu());
         }
     }
 }

@@ -127,6 +127,12 @@
     <Compile Include="FormMainQLSV.Designer.cs">
       <DependentUpon>FormMainQLSV.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormNhapTienThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNhapTienThu.Designer.cs">
+      <DependentUpon>FormNhapTienThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormQLHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMainQLSV.resx">
       <DependentUpon>FormMainQLSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhapTienThu.resx">
+      <DependentUpon>FormNhapTienThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormQLHoaDon.resx">
       <DependentUpon>FormQLHoaDon.cs</DependentUpon>
