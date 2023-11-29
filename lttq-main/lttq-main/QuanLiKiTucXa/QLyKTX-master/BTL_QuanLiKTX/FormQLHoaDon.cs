@@ -114,5 +114,10 @@ namespace BTL_QuanLiKTX
 		{
 			if (this.loadPanel.Controls.Count == 0) loadFunction(new FormDSHD("select * from ThuePhong"));
 		}
+
+		private void nhậpTiềnThuToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			loadFunction(new FormNhapTienThu());
+		}
 	}
 }

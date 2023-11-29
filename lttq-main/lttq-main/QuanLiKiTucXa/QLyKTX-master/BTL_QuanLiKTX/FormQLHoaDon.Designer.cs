@@ -38,6 +38,7 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.loadFunctionHD = new Guna.UI2.WinForms.Guna2Panel();
 			this.loadPanel = new Guna.UI2.WinForms.Guna2Panel();
+			this.nhậpTiềnThuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.loadFunctionHD.SuspendLayout();
@@ -59,7 +60,8 @@
 			// chứcNăngToolStripMenuItem
 			// 
 			this.chứcNăngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tìmKiếmHóaĐơnToolStripMenuItem});
+            this.tìmKiếmHóaĐơnToolStripMenuItem,
+            this.nhậpTiềnThuToolStripMenuItem});
 			this.chứcNăngToolStripMenuItem.Name = "chứcNăngToolStripMenuItem";
 			this.chứcNăngToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
 			this.chứcNăngToolStripMenuItem.Text = "Chức năng";
@@ -136,6 +138,13 @@
 			this.loadPanel.TabIndex = 6;
 			this.loadPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint_1);
 			// 
+			// nhậpTiềnThuToolStripMenuItem
+			// 
+			this.nhậpTiềnThuToolStripMenuItem.Name = "nhậpTiềnThuToolStripMenuItem";
+			this.nhậpTiềnThuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.nhậpTiềnThuToolStripMenuItem.Text = "Nhập tiền thu";
+			this.nhậpTiềnThuToolStripMenuItem.Click += new System.EventHandler(this.nhậpTiềnThuToolStripMenuItem_Click);
+			// 
 			// FormQLHoaDon
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,5 +180,6 @@
 		private System.Windows.Forms.ToolStripMenuItem thuêPhòngToolStripMenuItem;
 		private Guna.UI2.WinForms.Guna2Panel loadFunctionHD;
 		private Guna.UI2.WinForms.Guna2Panel loadPanel;
+		private System.Windows.Forms.ToolStripMenuItem nhậpTiềnThuToolStripMenuItem;
 	}
 }

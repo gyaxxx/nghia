@@ -139,5 +139,10 @@ namespace BTL_QuanLiKTX
 			txt_Tienphat.Text = TienPhat.ToString();
 			txt_Tienphat.Enabled = false;
 		}
+
+		private void btn_Huy_Click(object sender, EventArgs e)
+		{
+				this.Close();
+		}
 	}
 }

@@ -51,6 +51,7 @@
 			this.txt_Tienphat = new Guna.UI2.WinForms.Guna2TextBox();
 			this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
 			this.errorLoi = new System.Windows.Forms.ErrorProvider(this.components);
+			this.btn_Huy = new Guna.UI2.WinForms.Guna2Button();
 			((System.ComponentModel.ISupportInitialize)(this.errorLoi)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -341,9 +342,9 @@
 			this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
 			this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.guna2Button1.ForeColor = System.Drawing.Color.White;
-			this.guna2Button1.Location = new System.Drawing.Point(79, 474);
+			this.guna2Button1.Location = new System.Drawing.Point(24, 474);
 			this.guna2Button1.Name = "guna2Button1";
-			this.guna2Button1.Size = new System.Drawing.Size(790, 30);
+			this.guna2Button1.Size = new System.Drawing.Size(429, 30);
 			this.guna2Button1.TabIndex = 5;
 			this.guna2Button1.Text = "Tạo";
 			this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -352,11 +353,27 @@
 			// 
 			this.errorLoi.ContainerControl = this;
 			// 
+			// btn_Huy
+			// 
+			this.btn_Huy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btn_Huy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btn_Huy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btn_Huy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btn_Huy.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.btn_Huy.ForeColor = System.Drawing.Color.White;
+			this.btn_Huy.Location = new System.Drawing.Point(512, 474);
+			this.btn_Huy.Name = "btn_Huy";
+			this.btn_Huy.Size = new System.Drawing.Size(410, 30);
+			this.btn_Huy.TabIndex = 6;
+			this.btn_Huy.Text = "Hủy";
+			this.btn_Huy.Click += new System.EventHandler(this.btn_Huy_Click);
+			// 
 			// FormNhapTienThu
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(966, 516);
+			this.Controls.Add(this.btn_Huy);
 			this.Controls.Add(this.guna2Button1);
 			this.Controls.Add(this.txt_Tienphat);
 			this.Controls.Add(this.dtp_Ngayhethan);
@@ -412,5 +429,6 @@
 		private Guna.UI2.WinForms.Guna2TextBox txt_Tienphat;
 		private Guna.UI2.WinForms.Guna2Button guna2Button1;
 		private System.Windows.Forms.ErrorProvider errorLoi;
+		private Guna.UI2.WinForms.Guna2Button btn_Huy;
 	}
 }
